@@ -18,6 +18,9 @@ def call(String buildStatus = 'STARTED', String channel = '#ci-cd') {
   } else if (buildStatus == 'SUCCESSFUL') {
       color = 'GREEN'
       colorCode = '#00FF00'
+  } else if (buildStatus == 'SUCCESS') {
+      color = 'GREEN'
+      colorCode = '#00FF00'
   } else if (buildStatus == 'TESTS SUCCESSFUL') {
       color = 'GREEN'
       colorCode = '#00FF00'
